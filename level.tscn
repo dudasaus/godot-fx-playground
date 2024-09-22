@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://bir6piens6r1g"]
+
+[ext_resource type="Script" path="res://scripts/level.gd" id="1_indsw"]
+[ext_resource type="Texture2D" uid="uid://dyf7pofwgqi2n" path="res://icon.svg" id="1_tymhb"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_indsw")
+
+[node name="Target" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Target"]
+use_parent_material = true
+position = Vector2(572, 316)
+texture = ExtResource("1_tymhb")
+
+[node name="MenuBar" type="MenuBar" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Effects" type="PopupMenu" parent="MenuBar"]
+item_count = 2
+item_0/text = "None"
+item_1/text = "Grayscale"
+item_1/id = 1
+
+[connection signal="index_pressed" from="MenuBar/Effects" to="." method="_on_effects_index_pressed"]
