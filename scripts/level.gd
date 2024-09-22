@@ -3,7 +3,8 @@ extends Node2D
 var materials = {
 	"grayscale": load("res://materials/grayscale.tres"),
 	"invert": load("res://materials/invert.tres"),
-	"hurt": load("res://materials/hurt.tres")
+	"hurt": load("res://materials/hurt.tres"),
+	"crt-stripes": load("res://materials/crt-stripes.tres"),
 }
 
 func _init() -> void:
