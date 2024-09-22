@@ -18,9 +18,11 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Effects" type="PopupMenu" parent="MenuBar"]
-item_count = 2
+item_count = 3
 item_0/text = "None"
 item_1/text = "Grayscale"
 item_1/id = 1
+item_2/text = "Invert"
+item_2/id = 2
 
 [connection signal="index_pressed" from="MenuBar/Effects" to="." method="_on_effects_index_pressed"]

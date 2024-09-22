@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dga1opwpbpxhx"]
+
+[ext_resource type="Shader" path="res://materials/invert.gdshader" id="1_1h3gv"]
+
+[resource]
+shader = ExtResource("1_1h3gv")

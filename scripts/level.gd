@@ -1,7 +1,8 @@
 extends Node2D
 
 var materials = {
-	"grayscale": load("res://materials/grayscale.tres")
+	"grayscale": load("res://materials/grayscale.tres"),
+	"invert": load("res://materials/invert.tres")
 }
 
 func _init() -> void:
@@ -10,5 +11,5 @@ func _init() -> void:
 func _on_effects_index_pressed(index: int) -> void:
 	if index == 0:
 		$Target.material = null
-	elif index == 1:
-		$Target.material = materials["grayscale"]
+	else:
+		$Target.material = materials.values()[index - 1]
