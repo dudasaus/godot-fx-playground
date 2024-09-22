@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bbwhisfhsqdeh"]
+
+[ext_resource type="Shader" path="res://materials/pixelate-animated.gdshader" id="1_hmkdd"]
+
+[resource]
+shader = ExtResource("1_hmkdd")
+shader_parameter/min_pixels = 2.0
+shader_parameter/duration = 5.0

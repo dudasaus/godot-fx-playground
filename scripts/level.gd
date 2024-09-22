@@ -6,6 +6,7 @@ var materials = {
 	"Hurt": load("res://materials/hurt.tres"),
 	"CRT stripes": load("res://materials/crt-stripes.tres"),
 	"Pixelate": load("res://materials/pixelate.tres"),
+	"Pixelate animated": load("res://materials/pixelate-animated.tres"),
 }
 
 func _ready() -> void:
