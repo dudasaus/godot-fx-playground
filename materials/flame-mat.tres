@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c61at2oimpcg7"]
+
+[ext_resource type="Shader" uid="uid://bl2tiss5l2vjm" path="res://materials/flame.tres" id="1_irrkk"]
+
+[resource]
+shader = ExtResource("1_irrkk")
