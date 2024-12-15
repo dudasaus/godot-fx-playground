@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://31vagaj58r5a"]
+
+[ext_resource type="Shader" uid="uid://bekfqkfrmjjtk" path="res://skydome.tres" id="1_427iu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hwtnh"]
+render_priority = 0
+shader = ExtResource("1_427iu")
+
+[sub_resource type="SphereMesh" id="SphereMesh_2d1hg"]
+lightmap_size_hint = Vector2i(15709, 7855)
+material = SubResource("ShaderMaterial_hwtnh")
+flip_faces = true
+radius = 500.0
+height = 1000.0
+
+[node name="SkyScene" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_2d1hg")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.560676, -0.312168, 0.766938, 0, 0.926214, 0.376998, -0.828036, -0.211374, 0.519306, 3.61272, 1.77588, 2.44623)

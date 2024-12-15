@@ -14,3 +14,14 @@ config/name="fx-playerground"
 run/main_scene="res://level.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.301961, 0.301961, 0.301961, 0)
+
+[shader_globals]
+
+ProjectorColor={
+"type": "color",
+"value": Color(0, 0.721569, 1, 1)
+}

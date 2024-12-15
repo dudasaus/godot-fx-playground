@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://bks3bnrl15ndi"]
+
+[ext_resource type="FontFile" uid="uid://dxfqsvqyd4ap2" path="res://assets/ibm_plex.ttf" id="1_y22kv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rjtmh"]
+bg_color = Color(0.0846899, 0.0846899, 0.0846899, 1)
+
+[sub_resource type="Theme" id="Theme_5hmfg"]
+default_font = ExtResource("1_y22kv")
+
+[node name="ProjectorView" type="CanvasLayer"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="Container" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rjtmh")
+
+[node name="MarginContainer" type="MarginContainer" parent="Container"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Container/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme = SubResource("Theme_5hmfg")
+theme_type_variation = &"HeaderLarge"
+text = "Welcome to the experiment."
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Container/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme = SubResource("Theme_5hmfg")
+text = "You've been provided a challenge.
+If you lose, you die.
+
+[Continue]"
+horizontal_alignment = 1
